@@ -181,18 +181,18 @@
       transition: $transition;
       margin-left: 3px;
       position: relative;
-        @media ($tablet) {
-          &:before {
-            content: '';
-            position: absolute;
-            top: 7px;
-            left: calc(100% - 2px);
-            height: 1px;
-            width: 100px;
-            background-color: #D2957E;           
-            z-index: -1;
-          }
-        }
+        // @media ($tablet) {
+        //   &:before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 7px;
+        //     left: calc(100% - 2px);
+        //     height: 1px;
+        //     width: 100px;
+        //     background-color: #D2957E;           
+        //     z-index: -1;
+        //   }
+        // }
     }
 
     // &:after {

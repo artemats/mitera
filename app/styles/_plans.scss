@@ -1,4 +1,29 @@
 .plans{
+    &-section{
+        padding: 100px 0 20px;
+        margin-top: -57px;
+        position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: #fff;
+                opacity: .7;
+                mix-blend-mode: screen;
+            }
+            .bgVideo{
+                width: 507px;
+                height: 507px;
+                left: auto;
+                transform: scale(-1,-1);
+                right: 0;
+                z-index: -1;
+                    @media screen and (max-width: 1023px) {
+                        width: 307px;
+                        height: 307px;
+                    }
+            }
+    }
     &-list{
         display: flex;
         margin: 0 -24px;
@@ -24,20 +49,6 @@
                         padding: 0 12px;
                     }
             }
-            &:before {
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 100px;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                background: url("../images/img_adv_sec_decor_line.png") no-repeat center;
-                background-size: contain;
-                  @media ($tablet) {
-                    bottom: 20px;
-                  }
-            }
             @media ($tablet) {
                 flex-direction: row;
             }
@@ -46,7 +57,6 @@
             }
     }
     &-detail{
-        text-align: center;
         padding: 40px 0;
             p{
                 margin: 0;
@@ -58,38 +68,74 @@
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 50px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
         &-bg{
             position: absolute;
-            inset: 220px 0 0 0;
-            border-radius: 8px;
+            inset: 0;
+            border-radius: 0 0 8px 8px;
             background: linear-gradient(108.22deg, #F6F6FB 0%, #FEF3F9 100%);
                 & ~ div {
                     position: relative;
                     z-index: 1;
                 }
-                @media screen and (max-width: 1306px) {
-                    inset: 16vw 0 0 0;
-                }
+                // @media screen and (max-width: 1306px) {
+                //     inset: 16vw 0 0 0;
+                // }
+                // @media screen and (max-width: 1023px) {
+                //     inset: 40vw 0 0 0;
+                // }
+        }
+        &-info{
+            position: relative;
+            flex: 1;
+            padding: 0 50px 15px;
                 @media screen and (max-width: 1023px) {
-                    inset: 40vw 0 0 0;
+                   padding: 0 25px 15px; 
+                }
+        }
+        &-title{
+            margin: 0 -50px;
+            background: linear-gradient(73.46deg, #46A29F 4.42%, #4660A2 201.43%);
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 40px 10px 22px;
+                &-thumb{
+                    max-width: 164px;
+                    margin: 0 auto 11px;
+                }
+                &-value{
+                    margin: 0 0 8px;
+                    font-weight: bold;
+                }
+                &-subvalue{
+                    margin: 0;
+                    font-size: 14px;
+                    min-height: 18px;
+                }   
+                @media screen and (max-width: 1023px) {
+                    margin: 0 -25px; 
                 }
         }
         &-thumb{
-            max-width: 290px;
-            margin: 0 auto;
+            max-width: 192px;
+            margin: 0 auto -36px;
             text-align: center;
+            position: relative;
+            z-index: 2;
                 @media screen and (max-width: 1023px) {
                     max-width: 80%;
                 }
-                @media screen and (max-width: 575px) {
-                    max-width: 100%;
-                }
+                // @media screen and (max-width: 575px) {
+                //     max-width: 100%;
+                // }
         }
         &-description{
             text-align: center;
             font-size: 16px;
-            margin: 10px -25px;
+            margin: 22px -25px 12px;
                 p{
                     margin: 0;
                     line-height: 1.6em;
@@ -101,20 +147,24 @@
         &-price{
            text-align: center;
            display: flex;
-           align-items: center;
+           align-items: flex-end;
            justify-content: center;
-           flex-wrap: wrap;
-           font-family: var(--ff-accent);
-           font-size: 24px;
            padding: 10px 0 5px;
-           min-height: 40px;
+           min-height: 60px;
+           background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+linear-gradient(90.86deg, #46A29F 0%, #F99073 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
                 &-value{
                     display: inline-block;
                     margin: 0 3px;
+                    font-size: 48px;
+                    font-family: var(--ff-accent);
                 }
                 &-detail{
                     display: inline-block;
                     margin: 0 3px;
+                    font-size: 18px;
                 }
         }
         &-action{
@@ -131,7 +181,7 @@
                 &-title{
                     margin-bottom: 10px;
                     padding-top: 10px;
-                    font-size: 80%;
+                    font-weight: bold;
                 }
                 p{
                     margin: 0 0 5px;
@@ -141,18 +191,13 @@
                     margin-bottom: 20px;
                 }
                 li{
-                    padding-left: 20px;
+                    padding-left: 25px;
                         &:after{
-                            top: 12px;
-                            background: none;
-                            width: 4px;
-                            height: 4px;
-                            background-color: currentColor;
-                            border-radius: 50%;   
+                            top: 10px;
                         }
                 }
         }
-        @media screen and (max-width: 575px) {
-            padding: 50px 25px 15px;
-        }
+        // @media screen and (max-width: 575px) {
+        //     padding: 50px 25px 15px;
+        // }
   }

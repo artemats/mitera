@@ -171,6 +171,16 @@ img {
     }
   }
 
+  &.disabled{
+    pointer-events: none;
+      .btn__bg{
+        background: linear-gradient(108.22deg, #FBF6F9 0%, #EBF0F6 100%);
+      }
+      .svg, svg{
+        display: none;
+      }
+  }
+
   span {
     display: inline-block;
     position: relative;

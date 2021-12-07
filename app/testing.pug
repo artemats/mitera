@@ -103,114 +103,150 @@ block content
             .testing-info__text
               h3 Results Shared with Your Doctor
               p We can send your results to your existing provider, if desired period.
-  .container
-    .section-title._sm
-      span Choose your test:
-    .plans
-      .plans-list
-        .plans-list-item
-          .plan.aos-init(
-             data-aos="fade-up"
-             data-aos-delay="500"
-             data-aos-duration="1000")
-            .plan-bg
-            .plan-thumb
-              img(src='images/plan_1.png' alt loading='lazy')
-            .plan-description 
-              p Find out your odds of passing on any one of 
-                strong 421 genetic conditions 
-                | to your baby
-            .plan-price 
-              //- .plan-price-value $125 
-              //- .plan-price-detail Due Today
-            .plan-action
-              a(href='#').btn
-                .btn__bg
-                span Order
-                  <svg class="svg">
-                  <use xlink:href="images/sprite.svg#ic_arrow_right">
-                  </use>
-                  </svg>
-            .plan-body
-              p.plan-body-title Best for
-              p Best for
-        .plans-list-item
-          .plan.aos-init(
-             data-aos="fade-up"
-             data-aos-delay="500"
-             data-aos-duration="1000")
-            .plan-bg
-            .plan-thumb
-              img(src='images/plan_2.png' alt loading='lazy')
-            .plan-description 
-              p Screen for 
-                strong Down syndrome 
-                | and other disorders as well as the 
-                | sex of your baby
-            .plan-price 
-              .plan-price-value $125 
-              .plan-price-detail Due Today
-            .plan-action
-              a(href='#').btn
-                .btn__bg
-                span Order
-                  <svg class="svg">
-                  <use xlink:href="images/sprite.svg#ic_arrow_right">
-                  </use>
-                  </svg>
-            .plan-body
-              p.plan-body-title Only For
-              p Individuals Who Are At Least
-              p 9 Weeks Pregnant
-              p.plan-body-title Includes
-              ul
-                li Pre-Test Education
-                li Physician Order
-                li At-Home Test Kit
-                li At-Home Phlebotomy
-                li Virtual Genetic Counseling
-              p.plan-body-title Payment Options
-              ul
-                li Insurance*: $125 due today & the test is billed to insurance
-                li Self-Pay: $475 total
-        .plans-list-item
-          .plan.aos-init(
-             data-aos="fade-up"
-             data-aos-delay="500"
-             data-aos-duration="1000")
-            .plan-bg
-            .plan-thumb
-              img(src='images/plan_3.png' alt loading='lazy')
-            .plan-description 
-              p Find out your odds of passing on any one of 
-                strong 421 genetic conditions 
-                | to your baby
-            .plan-price 
-              //- .plan-price-value $125 
-              //- .plan-price-detail Due Today
-            .plan-action
-              a(href='#').btn
-                .btn__bg
-                span Order
-                  <svg class="svg">
-                  <use xlink:href="images/sprite.svg#ic_arrow_right">
-                  </use>
-                  </svg>
-            .plan-body
-              p.plan-body-title Best For
-              p Pregnant Individuals
-              p.plan-body-title Includes
-              ul
-                li Pre-Test Education
-                li Physician Order
-                li At-Home Test Kit
-                li At-Home Phlebotomy, If Required
-                li Virtual Counseling
-              p.plan-body-title Payment Options
-              p Insurance: TBD
-              p Self-Pay: TBD
-      .plans-detail
-        p *Insurance coverage varies. You may be required to provide additional payment depending on your specific |coverage.
+  section.plans-section
+    <video autoplay muted loop class="bgVideo dec-video">
+      <source src="images/video2.mp4" type="video/mp4">
+    </video>
+    .container
+      .plans
+        .plans-list
+          .plans-list-item
+            .plan.aos-init(
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000")
+              .plan-thumb
+                img(src='images/plan_1.png' alt loading='lazy')
+              .plan-info
+                .plan-bg
+                .plan-title
+                  .plan-title-thumb
+                    img(src='images/plan_1_1.png' alt loading='lazy')
+                  p.plan-title-value Before Pregnancy
+                  p.plan-title-subvalue Or Up to 20 Weeks of Pregnancy
+                .plan-description 
+                  p Find out your odds of passing on any one of 
+                    strong 421 genetic conditions 
+                    | to your baby
+                .plan-price 
+                  .plan-price-value $75 
+                  .plan-price-detail Due Today
+                .plan-action
+                  a(href='#').btn
+                    .btn__bg
+                    span Order
+                      <svg class="svg">
+                      <use xlink:href="images/sprite.svg#ic_arrow_right">
+                      </use>
+                      </svg>
+                .plan-body
+                  p.plan-body-title Best for
+                  ul
+                    li Individuals or Couples Before or During Early Pregnancy 
+                  p.plan-body-title Includes
+                  ul
+                    li Pre-Test Education 
+                    li Physician Order
+                    li At-Home Test Kit
+                    li Virtual Genetic Counseling 
+                  p.plan-body-title Payment Options
+                  ul
+                    li
+                      i Insurance*: $75 due today & the test is billed to insurance 
+                    li
+                      i Self-Pay: $350 total (Individual); $625 total (Couple)
+          .plans-list-item
+            .plan.aos-init(
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000")
+              .plan-thumb
+                  img(src='images/plan_2.png' alt loading='lazy')
+              .plan-info
+                .plan-bg
+                .plan-title
+                  .plan-title-thumb
+                    img(src='images/plan_1_1.png' alt loading='lazy')
+                  p.plan-title-value During Pregnancy
+                  p.plan-title-subvalue
+                .plan-description 
+                  p Screen for 
+                    strong Down syndrome 
+                    | and other disorders as well as the 
+                    | sex of your baby
+                .plan-price 
+                  .plan-price-value $125 
+                  .plan-price-detail Due Today
+                .plan-action
+                  a(href='#').btn
+                    .btn__bg
+                    span Order
+                      <svg class="svg">
+                      <use xlink:href="images/sprite.svg#ic_arrow_right">
+                      </use>
+                      </svg>
+                .plan-body
+                  p.plan-body-title Only For
+                  ul
+                    li Individuals Who Are At Least 9 Weeks Pregnant
+                  p.plan-body-title Includes
+                  ul
+                    li Pre-Test Education
+                    li Physician Order
+                    li At-Home Test Kit
+                    li At-Home Phlebotomy
+                    li Virtual Genetic Counseling
+                  p.plan-body-title Payment Options
+                  ul
+                    li Insurance*: $125 due today & the test is billed to insurance
+                    li Self-Pay: $475 total
+          .plans-list-item
+            .plan.aos-init(
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000")
+              .plan-thumb
+                  img(src='images/plan_3.png' alt loading='lazy')
+              .plan-info
+                .plan-bg
+                .plan-title
+                  .plan-title-thumb
+                    img(src='images/plan_1_1.png' alt loading='lazy')
+                  p.plan-title-value During Pregnancy
+                  p.plan-title-subvalue
+                .plan-description 
+                  p Find out your odds of passing on any one of 
+                    strong 421 genetic conditions 
+                    | to your baby
+                .plan-price 
+                  //- .plan-price-value $125 
+                  //- .plan-price-detail Due Today
+                .plan-action
+                  a(href='#').btn.disabled
+                    .btn__bg
+                    span Coming Soon
+                      <svg class="svg">
+                      <use xlink:href="images/sprite.svg#ic_arrow_right">
+                      </use>
+                      </svg>
+                .plan-body
+                  p.plan-body-title Best For
+                  ul
+                    li Pregnant Individuals
+                  p.plan-body-title Includes
+                  ul
+                    li Pre-Test Education
+                    li Physician Order
+                    li At-Home Test Kit
+                    li At-Home Phlebotomy, If Required
+                    li Virtual Counseling
+                  p.plan-body-title Payment Options
+                  ul
+                    li Insurance: TBD
+                    li Self-Pay: TBD
+        .plans-detail
+          p
+            strong *Insurance coverage varies. You may be required to provide additional payment depending on your specific |coverage.
 
   //-   .tab-controls
   //-     a(href='javascript:void(0)' data-tab='tabid1').active Expanded Carrier Screening (ECS)

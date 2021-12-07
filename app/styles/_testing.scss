@@ -48,7 +48,7 @@
         margin-bottom: 22px;
         font-size: 50px;
         @media ($tablet) {
-          font-size: 100px;
+          font-size: 72px;
           margin-bottom: 32px;
         }
       }
@@ -56,7 +56,7 @@
 
     &__img {
       @media ($tablet) {
-        margin-right: -100px;
+        margin-right: -50px;
       }
 
       @media screen and (max-width: 1685px) {
@@ -283,7 +283,7 @@
     padding-bottom: 20px;
     position: relative;
     @media ($tablet) {
-      padding-top: 100px;
+      padding-top: 10px;
       padding-bottom: 40px;
       display: flex;
       flex-wrap: wrap;
