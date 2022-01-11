@@ -54,10 +54,11 @@
   &__item {
     display: flex;
     padding: 32px 0;
-
+    justify-content: flex-end;
     position: relative;
     @media ($tablet) {
-      flex-basis: 28%;
+      //flex-basis: 28%;
+      flex-basis: 50%;
       padding: 58px 0;
         &:before {
           content: '';
@@ -73,7 +74,8 @@
     &:after {
       content: '';
       position: absolute;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: 0;
       height: 1px;
       width: 100%;
@@ -83,18 +85,22 @@
       }
     }
 
+    &:nth-child(2n) {
+      @media ($tablet) {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
     &:nth-child(3n) {
       @media ($tablet) {
         justify-content: flex-end;
 
-        &:before {
-          display: none;
-        }
-
-        &:after {
-          left: unset;
-          right: 0;
-        }
+        //&:after {
+        //  left: unset;
+        //  right: 0;
+        //}
         .partner__tooltip {
           left: unset;
           right: calc(100% + 30px);
@@ -109,21 +115,21 @@
       }
     }
 
-    &:nth-child(3n+2) {
-      @media ($tablet) {
-        justify-content: flex-end;
-        flex-basis: 44%;
-
-        &:after {
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
-    }
+    //&:nth-child(3n+2) {
+    //  @media ($tablet) {
+    //    justify-content: flex-end;
+    //    //flex-basis: 44%;
+    //    flex-basis: 50%;
+    //
+    //    &:after {
+    //      left: 50%;
+    //      transform: translateX(-50%);
+    //    }
+    //  }
+    //}
 
     &:nth-last-child(1),
-    &:nth-last-child(2),
-    &:nth-last-child(3) {
+    &:nth-last-child(2) {
       @media ($tablet) {
         &:after {
           display: none;
@@ -144,6 +150,7 @@
   $root: &;
   @media ($tablet) {
     width: 71%;
+    padding-right: 10px;
   }
 
   &__icon {
