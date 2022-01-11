@@ -253,4 +253,19 @@
     app.handleTabletChange(app.mediaQueryDesktop);
   });
 
+  const anchorLinks = document.querySelectorAll('.scroll-to');
+  for(let i = 0; i < anchorLinks.length; i++) {
+    anchorLinks[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      let anchorTarget = this.getAttribute('data-scroll');
+      let top = document.querySelector(anchorTarget).getBoundingClientRect().y;
+      if(!!anchorTarget) {
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+
 })();

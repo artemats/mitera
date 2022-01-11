@@ -26,6 +26,7 @@
       padding-right: 0;
       @media ($mob) {
         text-align: center;
+        padding-right: 32px;
       }
       @media ($tablet) {
         display: flex;
@@ -52,6 +53,19 @@
           margin-bottom: 32px;
         }
       }
+    }
+
+    &__description{
+      line-height: 2em;
+      font-size: 16px;
+      max-width: 410px;
+      margin: 0 auto;
+        p{
+          margin: 0;
+        }
+        @media ($tablet) {
+          margin: 0;
+        }
     }
 
     &__img {
@@ -106,12 +120,15 @@
             flex-direction: column;
           }
           @media screen and (max-width: 1685px) {
-            right: 80%;
+            right: 95%;
           }
           @media screen and (max-width: 1306px) {
             top: auto;
             bottom: 100px;
             padding: 100px 0 20px;
+          }
+          @media screen and (max-width: 1185px) {
+            right: 66%;
           }
           @media screen and (max-width: 1023px) {
             right: 0;
@@ -135,9 +152,17 @@
         object-fit: contain;
         object-position: center bottom;
         margin-bottom: -5px;
-        @media ($tablet) {
-          margin-bottom: 0;
-        }
+          @media ($tablet) {
+            margin-bottom: 0;
+          }
+      }
+
+      & > img{
+        max-width: 528px;
+        width: 40vw;
+          @media screen and (max-width: 1023px) {
+            width: 100%;
+          }
       }
 
     }

@@ -229,6 +229,12 @@ img {
       fill: #fff;
     }
   }
+
+  &-white{
+    .btn__bg{
+      background-color: #FFFFFF;
+    }
+  }
 }
 
 .btn_arrow {

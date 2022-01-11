@@ -44,9 +44,41 @@
   &__btn-holder {
     position: relative;
     margin-bottom: 44px;
-    @media ($tablet) {
-      margin-bottom: 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+      &_item{
+        flex: 1;
+        border-radius: 8px;
+        box-shadow: 0 3px 2px rgba(32, 40, 51, 0.1);
+        background-color: #FFFFFF;
+        margin: 16px;
+        padding: 28px 24px;
+        text-align: center;
+          .btn{
+            margin-top: 20px;
+              span{
+                min-width: 200px;
+              }
+          }
+          .plan-title-subvalue{
+            font-size: 12px;
+          }
+          .plan-title-thumb{
+            margin-right: auto;
+            margin-left: auto;
+            height: 32px;
+            margin-bottom: 8px;
+          }
+          @media ($tablet) {
+            flex: none;
+          }
+        }
+      @media ($tablet) {
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+      }
   }
 
   &__text {

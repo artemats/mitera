@@ -5,15 +5,24 @@ block content
     <source src="images/bg_video_banner.mp4" type="video/mp4">
     </video>
     .container
-      //include blocks/_breadcrumbs
+      include blocks/_breadcrumbs
       .testing-page-banner__title
         h1.section-title.aos-init(
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="1000")
           span How Mitera Home Tests Work
-        .testing-page-banner__description
-          p We provide genetic counseling, depending on your results. Mitera MFM subspecialists are also available for complex cases.
+        .testing-page-banner__btn.aos-init(
+          data-aos="fade"
+          data-aos-delay="800"
+          data-aos-duration="1000")
+          a(href='#').btn
+            .btn__bg
+            span Choose Your Test
+              <svg class="svg">
+              <use xlink:href="images/sprite.svg#ic_arrow_right">
+              </use>
+              </svg>
       .testing-page-banner__img.aos-init(
         data-aos="fade"
         data-aos-delay="900"
@@ -96,7 +105,7 @@ block content
               p We can send your results to your existing provider, if desired period.
   section.plans-section
     <video autoplay muted loop class="bgVideo dec-video">
-      <source src="images/video2.mp4" type="video/mp4">
+    <source src="images/video2.mp4" type="video/mp4">
     </video>
     .container
       .plans
@@ -109,13 +118,13 @@ block content
               .plan-head
                 .plan-bg
                 .plan-thumb
-                  img(src='images/plans/plan-product-1.png' alt loading='lazy')
+                  img(src='images/plans/plan-product-2.png' alt loading='lazy')
                 .plan-title
                   .plan-title-thumb
-                    img(src='images/plans/plan-1.svg' alt loading='lazy')
-                  p.plan-title-subvalue expanded carrier screening (ECS)
+                    img(src='images/plans/plan-2.svg' alt loading='lazy')
+                  p.plan-title-subvalue non-invasive prenatal test (NIPT)
                   .plan-price
-                    p.plan-price-value $75
+                    p.plan-price-value $120
                     span.plan-price-detail Due Today
                   .plan-action
                     a(href='#').btn.btn-white
@@ -128,30 +137,31 @@ block content
               .plan-wrapper
                 .plan-info
                   .plan-description
-                    p Find out your genetic compatibility and know your odds of passing any one of
-                      strong 421 most common genetic conditions
-                      |on to your baby, including Cystic Fibrosis, Thalassemia,
-                      | Sickle Cell Anemia, Spinal Muscular Atrophy and Tay-Sachs Disease.
+                    p Screen for
+                      strong Down syndrome
+                      | and other disorders and find out the
+                      strong sex of your baby
+                      | with over 99% accuracy.
                   .plan-attention
                     p
                       strong Best For:
-                      |  Individuals or Couples
-                      strong Before Pregnancy or
-                      |  During Early Pregnancy
+                      | Only For: Individuals Who Are Currently
+                      strong  At Least 9 Weeks Pregnant
                   .plan-body
                     .plan-body-item
                       p.plan-body-title Includes
                       ol
-                        li At-Home Saliva Collection Kit
+                        li At-Home Blood Collection Kit
+                        li Convenient, At-Home Phlebotomy Service
                         li Virtual Genetic Counseling on Results
                         li Results Sent to Your Existing Doctor, if Desired
                     .plan-body-item
                       p.plan-body-title Payment Options
                       ul
                         li
-                          i Insurance*: $75 due today and the rest is billed to your insurance
+                          i Insurance*: $120 due today and the rest is billed to your insurance
                         li
-                          i Self-Pay: $350 total (Individual); $625 total (Couple)
+                          i Self-Pay: $295 total
 
                   .plans-detail
                     p *Insurance coverage varies. You may be required to provide additional payment

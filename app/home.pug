@@ -29,7 +29,7 @@ block content
         data-aos-duration="1500"
         data-aos-offset="-200"
         )
-        img(src='images/img_home_banner.png' alt loading='lazy')
+        img(src='images/home-banner.png' alt loading='lazy')
   section.advatages-sec
     .bg-decorator._bg-pink
       .container.advatages-sec__content
@@ -43,13 +43,28 @@ block content
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1000")
-            a(href='#').btn
-              .btn__bg
-              span Initiate Testing Process
-                <svg class="svg">
+            .advatages-sec__btn-holder_item
+              .plan-title-thumb
+                img(src='images/plans/plan-1.svg' alt loading='lazy')
+              p.plan-title-subvalue expanded carrier screening (ECS)
+              a(href='#').btn
+                .btn__bg
+                span Learn more
+                  <svg class="svg">
+                    <use xlink:href="images/sprite.svg#ic_arrow_right">
+                    </use>
+                  </svg>
+            .advatages-sec__btn-holder_item
+              .plan-title-thumb
+                img(src='images/plans/plan-2.svg' alt loading='lazy')
+              p.plan-title-subvalue non-invasive prenatal test (NIPT)
+              a(href='#').btn
+                .btn__bg
+                span Learn more
+                  <svg class="svg">
                   <use xlink:href="images/sprite.svg#ic_arrow_right">
                   </use>
-                </svg>
+                  </svg>
         .advatages-sec__text
           h2 From the Comfort of Your Home
           p Mitera helps democratize access to genetic and other reproductive medical data in an efficient and medically-responsible manner.
