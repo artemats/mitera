@@ -14,7 +14,7 @@
 
   &__heading {
     position: relative;
-    margin-top: -30px;
+    margin-top: -37px;
       @media ($tablet) {
         padding-left: 9%;
         flex-basis: 50%;
@@ -102,7 +102,7 @@
 
     p {
       line-height: 2;
-      margin: 0 0 16px;
+      margin: 0 0 20px;
       @media ($tablet) {
         font-size: 18px;
       }
@@ -110,7 +110,7 @@
     }
 
     ul, ol {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 
