@@ -24,20 +24,21 @@
       padding-top: 60px;
       justify-content: space-between;
       padding-right: 0;
-      @media ($mob) {
-        text-align: center;
-        padding-right: 32px;
-      }
-      @media ($tablet) {
-        display: flex;
-        padding-top: 112px;
-      }
+        @media ($mob) {
+          text-align: center;
+          padding-right: 32px;
+        }
+        @media ($tablet) {
+          display: flex;
+          padding-top: 122px;
+        }
     }
 
     &__title {
 
       @media ($tablet) {
         flex-basis: 42%;
+        padding-top: 28px;
       }
 
       @media screen and (max-width: 1306px) {
@@ -45,13 +46,14 @@
       }
 
       .section-title {
-        line-height: 1.35;
+        line-height: 1.604em;
         margin-bottom: 22px;
         font-size: 50px;
-        @media ($tablet) {
-          font-size: 72px;
-          margin-bottom: 32px;
-        }
+          @media ($tablet) {
+            font-size: 48px;
+            margin-bottom: 27px;
+            max-width: 390px;
+          }
       }
     }
 
@@ -81,12 +83,19 @@
       .partners{
           &__item{
             flex-basis: 100%;
-            padding: 20px 0;
+            padding: 30px 0;
+            justify-content: flex-start;
               &:before{
                 display: none;
               }
+              @media screen and (max-width: 1306px) {
+                padding: 20px 0;
+              }
               @media ($tablet) {
                 &:nth-child(1){
+                  .partner{
+                    max-width: 90%;
+                  }
                   .partner__title-icon::before{
                     width: 228px;
                       @media screen and (max-width: 1685px) {
@@ -109,39 +118,56 @@
                         width: 122px;
                       }
                   }
+                  .partner{
+                    max-width: 90%;
+                  }
                 }
               }
           }
           @media ($tablet) {
             position: absolute;
-            right: 100%;
-            top: 5px;
-            width: 325px;
+            right: 107%;
+            top: -43px;
+            width: 330px;
             flex-direction: column;
+            flex-wrap: nowrap;
           }
           @media screen and (max-width: 1685px) {
             right: 95%;
           }
           @media screen and (max-width: 1306px) {
-            top: auto;
-            bottom: 100px;
+            top: -120px;
             padding: 100px 0 20px;
+            width: 305px;
           }
           @media screen and (max-width: 1185px) {
-            right: 66%;
+            right: 75%;
           }
           @media screen and (max-width: 1023px) {
             right: 0;
+            top: 0;
+            width: 100%;
           }
       }
 
       .partner{
-        &__title{
-          @media screen and (max-width: 1023px) {
-            width: auto;
-            align-items: center;
+          &__title{
+            &-icon{
+              margin-left: 10px;
+            }
+            @media screen and (max-width: 1023px) {
+              width: auto;
+              align-items: center;
+            }
+            @media ($tablet) {
+              display: inline-flex;
+              align-items: center;
+              justify-content: flex-start;
+            }
           }
-        }
+          &__icon{
+            margin-right: 28px;
+          }
           @media ($tablet) {
             width: 100%;
           }
@@ -174,6 +200,31 @@
         min-width: 260px;
       }
     }
+
+    .partners__item{
+      &:after{
+        width: 14px;
+        height: 14px;
+        left: 45px;
+        background: transparent;
+        background-image: url(http://localhost:9000/images/sprite/ic_arrow_down_grey.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: .6;
+      }
+      &:nth-child(2n) {
+        &:after{
+          display: block;
+        }
+      }
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+    }
+
   }
 }
 

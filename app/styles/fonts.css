@@ -7,4 +7,5 @@
   url('../fonts/PrahoPro-Regular/PrahoPro-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }

@@ -164,6 +164,7 @@
     line-height: 1.6;
     transition: $transition;
     vertical-align: middle;
+    text-transform: capitalize;
     @media ($tablet) {
       position: relative;
     }

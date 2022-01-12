@@ -58,7 +58,6 @@ ul, ol {
 
 ul, ol {
   list-style: none;
-  padding-left: 30px;
 
   li {
     padding-left: 30px;
@@ -97,7 +96,6 @@ img {
   font-family: var(--ff-accent);
   @include gradient-text(#46A29F, #F99073);
   font-size: 32px;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
 
@@ -140,6 +138,7 @@ img {
   outline: none !important;
   text-align: center;
   max-width: 100%;
+  text-transform: capitalize;
 
   &__bg {
     top: 0;
