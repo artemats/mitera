@@ -237,6 +237,7 @@
     visibility: hidden;
     opacity: 0;
     transition: $transition;
+    text-transform: none;
 
     &:before {
       content: '';
