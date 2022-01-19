@@ -279,15 +279,6 @@
                                 padding-left: 32px;
                             }
                         }
-                        &:nth-child(even){
-                            ul, ol{
-                                li{
-                                    &:after{
-                                        background: url(../images/ic_ul.svg) no-repeat center;
-                                    }
-                                }
-                            }
-                        }
                 }
                 p{
                     margin: 0 0 8px;
