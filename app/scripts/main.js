@@ -49,7 +49,14 @@
       }
     },
     toggleMobNav: function () {
-      app.body.classList.toggle('open-mob-nav');
+      if(!app.body.classList.contains('open-mob-nav')){
+        app.body.classList.add('open-mob-nav');
+        document.querySelector('html').style.overflow = 'hidden'
+      }
+      else{
+        app.body.classList.remove('open-mob-nav');
+        document.querySelector('html').style.overflow = ''
+      }
     },
     initAccordeon: function () {
       if (!app.elementExist(app.accordion)) return;
