@@ -8,7 +8,7 @@
   z-index: 30;
   transition: $transition;
 
-  @media ($tablet) {
+  @media ($medium-d) {
     padding: 32px 0;
   }
 
@@ -17,7 +17,7 @@
     position: fixed;
     background: #FFFFFF;
     box-shadow: 0 4px 30px rgba(32, 40, 51, 0.1);
-    @media ($tablet) {
+    @media ($medium-d) {
       padding: 12px 0;
       .logo img {
         max-height: 32px;
@@ -68,11 +68,11 @@
             }
         }
     }
-    @media ($tablet) {
+    @media ($medium-d) {
       display: flex;
       align-items: center;
     }
-    @media ($mob) {
+    @media ($medium) {
       display: none;
     }
 
@@ -97,7 +97,7 @@
       display: none;
     }
   }
-  @media ($mob) {
+  @media ($medium) {
     flex-direction: column;
     align-items: center;
     > .menu-item {
@@ -105,7 +105,7 @@
     }
   }
 
-  @media ($tablet) {
+  @media ($medium-d) {
 
     padding-top: 24px;
     .sticky  & {
@@ -123,7 +123,7 @@
     display: block;
     position: relative;
 
-    @media ($tablet) {
+    @media ($medium-d) {
       display: block;
     }
 
@@ -160,7 +160,7 @@
       }
     }
 
-    @media ($tablet) {
+    @media ($medium-d) {
       + .menu-item {
         margin-left: 48px;
       }
@@ -184,10 +184,10 @@
 
 .sub-menu {
   display: none;
-  @media ($mob) {
+  @media ($medium) {
     padding-top: 15px;
   }
-  @media ($tablet) {
+  @media ($medium-d) {
     position: absolute;
     top: 100%;
     left: -5px;
@@ -202,7 +202,7 @@
   .menu-item {
     padding: 0 0 32px 0;
     margin-left: 0 !important;
-    @media ($mob) {
+    @media ($medium) {
       padding: 7px 0 7px 15px;
     }
   }
@@ -216,14 +216,14 @@
   img {
     max-height: 32px;
     transition: $transition;
-    @media ($tablet) {
+    @media ($medium-d) {
       max-height: 69px;
     }
   }
 }
 
 .mob-nav-wrap {
-  @media ($mob) {
+  @media ($medium) {
     position: absolute;
     top: calc(100% + 1px);
     left: 0;
@@ -242,7 +242,7 @@
   }
 
   .header__cta {
-    @media ($mob) {
+    @media ($medium) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -254,7 +254,7 @@
         }
       }
     }
-    @media ($mob) {
+    @media ($medium) {
       .sub-menu{
         a{
           margin-bottom: 0;
@@ -264,7 +264,7 @@
         margin-bottom: 15px;
       }
     }
-    @media ($tablet) {
+    @media ($medium-d) {
       display: none;
     }
   }
@@ -276,7 +276,7 @@
   cursor: pointer;
   position: relative;
   z-index: 5;
-  @media ($tablet) {
+  @media ($medium-d) {
     display: none;
   }
 

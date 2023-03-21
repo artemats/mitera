@@ -2,7 +2,7 @@ extends layouts/default
 block content
   section.home-banner
     <video autoplay muted loop class="bgVideo dec-video">
-      <source src="images/bg_video_banner.mp4" type="video/mp4">
+    <source src="images/bg_video_banner.mp4" type="video/mp4">
     </video>
     .container
       .home-banner__title
@@ -10,26 +10,64 @@ block content
           span.aos-init(
             data-aos="fade-up"
             data-aos-delay="0"
-            data-aos-duration="1000") Predict.
+            data-aos-duration="1000") Are You
+          | !{' '}
           span.aos-init(
             data-aos="fade-up"
             data-aos-delay="300"
-            data-aos-duration="1000") Prevent.
+            data-aos-duration="1000") Pregnancy
           span.aos-init(
             data-aos="fade-up"
             data-aos-delay="600"
-            data-aos-duration="1000") Prepare.
+            data-aos-duration="1000") Ready?
         .home-banner__text.aos-init(
           data-aos="fade"
           data-aos-delay="800"
-          data-aos-duration="1000") Through the latest available technologies, we inform you about your genetic and other pregnancy-related risks, empowering you along your family-forming journey.
+          data-aos-duration="1000") Through Maternal-Fetal Medicine (MFM) expertise and genetics technologies, we inform you about your pregnancy-related risks and options, empowering you along your family-forming journey.
       .home-banner__img.aos-init(
         data-aos="fade"
         data-aos-delay="900"
         data-aos-duration="1500"
         data-aos-offset="-200"
-        )
-        img(src='images/home-banner.png' alt loading='lazy')
+      )
+        img(src='images/img_home_banner-1.png' alt loading='lazy')
+
+  section.guidance-sec.section-with-dna-decor.circle.circle_orange
+          .section-dna-decor._top
+          .section-dna-decor._bottom
+          .bg-decorator._bg-orange._circle
+            .container
+              .guidance-sec__heading
+                .section-title.aos-init(
+                  data-aos="fade-up"
+                  data-aos-duration="1000") Screening for <br> Pregnancy <br> Readiness
+                a(href='#'
+                  data-aos="fade-up"
+                  data-aos-delay='300'
+                  data-aos-duration="1000"
+                ).btn.aos-init
+                  .btn__bg
+                  span Book A Consultation
+                    <svg class="svg">
+                    <use xlink:href="images/sprite.svg#ic_arrow_right">
+                    </use>
+                    </svg>
+              .guidance-sec__content.aos-init(
+                data-aos="fade-up"
+                data-aos-duration="1000")
+                .accordion
+                  .accordion__item
+                    .accordion__title MFM Preconception Screening
+                    .accordion__text
+                      p Whether you are currently pregnant or planning pregnancy, a screening by an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
+                  .accordion__item
+                    .accordion__title MFM Gestational Carrier Screening
+                    .accordion__text
+                      p We provide comprehensive medical and obstetrical risk assessments of gestational carrier candidates by our MFM subspecialists. Involving an MFM early helps prevent adverse obstetrical outcomes as well provides as an opportunity for pregnancy optimization.
+                  .accordion__item
+                    .accordion__title Reproductive Genetic Counseling
+                    .accordion__text
+                      p With the complexity of today’s screening and diagnostic modalities, having the opportunity to spend time with a certified reproductive genetic counselor is invaluable. We give you the opportunity to learn about all of the screening modalities and help you navigate the ever-evolving world of reproductive genetics.
   section.advatages-sec
     .bg-decorator._bg-pink
       .container.advatages-sec__content
@@ -182,58 +220,6 @@ block content
               h2 Telefetal Sonography 3
               p We partner with hospitals and other women’s health facilities to improve obstetrical outcomes, reduce upfront costs and achieve a better patient experience by providing MFM expertise through remote advanced ultrasound interpretations.
       .swiper-pagination
-  section.guidance-sec.section-with-dna-decor.circle.circle_orange
-    .section-dna-decor._top
-    .section-dna-decor._bottom
-    .bg-decorator._bg-orange._circle
-      .container
-        .guidance-sec__heading
-          .section-title.aos-init(
-            data-aos="fade-up"
-            data-aos-duration="1000") Expert <br>Guidance
-          a(href='#'
-            data-aos="fade-up"
-            data-aos-delay='300'
-            data-aos-duration="1000"
-            ).btn.aos-init
-            .btn__bg
-            span Book A Consultation
-              <svg class="svg">
-              <use xlink:href="images/sprite.svg#ic_arrow_right">
-              </use>
-              </svg>
-        .guidance-sec__content.aos-init(
-          data-aos="fade-up"
-          data-aos-duration="1000")
-          .accordion
-            .accordion__item
-              .accordion__title MFM Telehealth Consults
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title MFM Gestational Carrier Clearances
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title MFM Telehealth Consults
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title Malpractice Case Review
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title Reproductive Genetic Counseling
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title Preconception Planning
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
-            .accordion__item
-              .accordion__title Donor Screening
-              .accordion__text
-                p Whether you are currently pregnant or planning pregnancy, consultation with an MFM subspecialist in addition to your standard care can optimize your pregnancy outcome and reduce risk for you and your baby. MFM subspecialists are the experts in the maternal and fetal complications of pregnancy.
   section.partners-sec
     .container
       .section-title.aos-init(
